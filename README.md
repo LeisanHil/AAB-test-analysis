@@ -1,21 +1,25 @@
-# Анализ AAB-тестирования
+# AAB Test Analysis
 
-Анализ ААВ-тестирования в крупном дейтинговом приложении. 
-Помимо базовых функций, в приложении также имеется премиум-подписка, которая дает доступ к ряду важных дополнительных возможностей. 
-Был проведен A/B тест, в рамках которого для новых пользователей из нескольких стран была изменена стоимость премиум-подписки при 
-покупке через две новые платежные системы. При этом стоимость пробного периода оставалась прежней. Проверьте: Был ли эксперимент успешен в целом.
+Analysis of AAB testing in a large dating application.  
+In addition to basic features, the app offers a premium subscription that provides access to several important additional features.  
+An A/B test was conducted, wherein the price of the premium subscription for new users in several countries was adjusted when using two new payment systems. The cost of the trial period remained unchanged.  
+**Objective**: Evaluate whether the experiment was successful overall.
 
-### Стек: 
+### Tech Stack:
 
-    Pandas, NumPy, SciPy, Matplotlib, Seaborn
+- **Pandas**, **NumPy**, **SciPy**, **Matplotlib**, **Seaborn**
 
-### Реализация проекта:
+### Project Implementation:
 
-- Описала нулевую и альтернативную гипотезы с точки зрения бизнеса
-- Провела предварительный анализ (EDA) и предобработку данных
-- Определила, посчитала и проанализировала продуктовые метрики (конверсия в покупку, ARPU и ARPPU)
-- Описала статистические нулевую и альтернативную гипотезы для каждой метрики
-- Проверила гипотезы с использованием статистических тестов в Python (критерий Хи-квадрат, Bootstrap, метод Шапиро-Уилка для проверки на нормальность распределения, тест Левина для проверки на однородность дисперсий)
+- Formulated null and alternative hypotheses from a business perspective.
+- Conducted exploratory data analysis (EDA) and data preprocessing.
+- Calculated and analyzed key product metrics (purchase conversion rate, ARPU, and ARPPU).
+- Defined and stated statistical null and alternative hypotheses for each metric.
+- Validated hypotheses using statistical tests in Python:
+  - Chi-squared test
+  - Bootstrap method
+  - Shapiro-Wilk test for normality
+  - Levene's test for homogeneity of variances
 
-### Полученные результаты:
-> Изменения, внесенные в тестовой группе, не привели к статистически значимым изменениям в конверсии в покупку, ARPPU или ARPU по сравнению с контрольными группами.
+### Key Results:
+> The changes implemented in the test group did not lead to statistically significant differences in purchase conversion rates, ARPPU, or ARPU compared to the control groups.
